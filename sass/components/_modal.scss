@@ -1,0 +1,190 @@
+
+.backdrop {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
+  }
+  
+  .backdrop.is-hidden .modal {
+    transform: scale(2) translate(-250px) rotate(250deg);
+    transition: transform 250ms var(--timing-function);
+  }
+  
+  .modal {
+    width: 528px;
+    min-height: 581px;
+    background-color: var(--color-btn);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+  
+    transition: transform 250ms var(--timing-function);
+  }
+  
+  .modal-close {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: fill 250ms var(--timing-function);
+    &:focus,
+    &:hover{
+      fill: var(--btn-text-color);
+    }
+  }
+  
+
+  
+
+  .modal-title{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+  margin-bottom: 30px;
+  }
+  
+  .modal-form-input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--modal-form-color);
+    border-radius: 4px;
+    padding-left: 42px;
+    padding-right: 15px;
+    outline: none;
+    transition: border-color 250ms var(--timing-function);
+    &:focus{
+      border-color: var(--btn-text-color);
+    }
+  }
+  
+
+  
+  .modal-form-input:focus + .modal-icon{
+    fill: var(--btn-text-color);
+  }
+  
+  .modal-form-text{
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    padding: 12px 16px;
+    color: var(--main-title-color);
+    outline: none;
+    transition: border-color 250ms var(--timing-function);
+    &::placeholder{
+      font-weight: 400;
+      color: rgba(117, 117, 117, 0.5);
+    }
+    &:focus{
+      border-color: var(--btn-text-color);
+    }
+  }
+
+  
+  .text-form-input{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--main-text-color);
+    margin-bottom: 4px;
+    display: block;
+  }
+  
+  .modal-field{
+    margin-bottom: 10px;
+  }
+  
+  .modal-form-icon{
+    position: relative;
+  }
+  
+  .modal-icon{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms var(--timing-function);
+  }
+  
+  .check{
+    margin-bottom: 30px;
+  }
+  
+  .modal-check-item{
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+    border: 2px solid var(--main-title-color);
+    margin-right: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-check:focus + .check-text .modal-check-item{
+    border-color: var(--btn-text-color);
+  }
+  
+  .check-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-check-link{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: var(--btn-text-color);
+  }
+  
+  .modal-check-icon{
+    fill: var(--color-btn);
+  }
+  
+  .modal-check:checked + .check-text .modal-check-item{
+    background-color: var(--btn-text-color);
+    border: 0.2px solid var(--color-btn);
+  }
+  
+  .modal-check-item{
+    transition: background-color 250ms var(--timing-function), border 250ms var(--timing-function);
+  }
+  
+  .check-btn{
+    transition: background-color 250ms var(--timing-function);
+    &:focus{
+      background-color: #188CE8;
+    }
+  }
+  
+
+  
