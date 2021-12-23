@@ -2,18 +2,38 @@
 .footer {
     background-color: #2f303a;
     max-width: 1600px;
-    height: 252px;
+    // height: 252px;
     margin-right: 0;
     margin-left: 0;
+  }
+
+  .footer__container {
+    // display: flex;
+    // justify-content: baseline;
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      flex-direction: row;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+
+  .footer-box__nav{
+    text-align: center;
   }
   
-  .footer-item:not(:last-child) {
-    margin-bottom: 9px;
+  .footer__item:not(:last-child) {
+    margin-bottom: 8px;
   }
   
-  .footer-logo-web {
+  .footer-logo__web {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -33,7 +53,7 @@
     display: block;
   }
   
-  .footer-link {
+  .footer__location {
     font-style: normal;
     font-family: inherit;
     font-weight: 400;
@@ -43,7 +63,7 @@
     color: var(--second-text-color);
   }
   
-  .footer-mail {
+  .footer__mail {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -52,7 +72,7 @@
     color: rgba(255, 255, 255, 0.6);
   }
   
-  .footer-tel {
+  .footer__tel {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -61,7 +81,7 @@
     color: rgba(255, 255, 255, 0.6);
   }
   
-.footer-right-title {
+.footer-social__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -69,32 +89,35 @@
     text-transform: uppercase;
     color: var(--second-text-color);
     margin-bottom: 20px;
+    text-align: center;
+    margin-top: 60px;
+    @media screen and (min-width: 768px) {
+      margin-top: 0px;
+    }
   }
   
-  .footer-container {
-    display: flex;
-    justify-content: baseline;
+  .footer-box__social {
+    // margin-left: 70px;
+    @media screen and (min-width: 1200px) {
+      margin-left: 70px;
+    }
   }
   
-  .footer-box-right {
-    margin-left: 70px;
-  }
-  
-  .footer-social-list {
+  .footer-social__list {
     display: flex;
     justify-content: center;
   }
   
-  .footer-social-item {
+  .footer-social__item {
     width: 44px;
     height: 44px;
   }
   
-  .footer-social-item + .footer-social-item {
+  .footer-social__item + .footer-social__item {
     margin-left: 10px;
   }
   
-  .footer-social-link {
+  .footer-social__link {
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -110,23 +133,26 @@
     }
   }
   
-  .footer-social-icon {
+  .footer-social__icon {
     fill: currentColor;
   }
   
-
-  
-  
-.footer-box-mailing{
-    margin-left: 93px;
-  
+.footer-box__mailing{
+    // margin-left: 93px;
+    margin-top: 60px;
+    @media screen and (min-width: 1200px) {
+      margin-left: 93px;
+      margin-top: 0;
+    }
   }
   
-  .footer-mailing-mail{
-    display: flex;
+  .footer-mailing__mail{
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
   
-  .footer-mailing-title{
+  .footer-mailing__title{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -134,18 +160,22 @@
     text-transform: uppercase;
     color: var(--second-text-color);
     margin-bottom: 20px;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+    }
   }
   
-  .footer-input-email{
-    width: 358px;
+  .footer-mailing__input{
+    width: 100%;
     height: 50px;
-    margin-right: 12px;
     padding-left: 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: transparent;
+    margin-bottom: 20px;
     &::placeholder{
       font-weight: 400;
       font-size: 16px;
@@ -154,11 +184,18 @@
       letter-spacing: 0.03em;
       color: rgba(255, 255, 255, 0.6);
     }
+
+    @media screen and (min-width: 768px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 12px;
+      width: 358px;
+      margin-bottom: 0;
+    }
   }
   
-
-  
-  .footer-btn{
+  .footer-mailing__btn{
     font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -169,7 +206,7 @@
   color: var(--color-btn);
   }
   
-  .footer-mailing-icon{
+  .footer-mailing__icon{
     margin-left: 10px;
     fill: var(--color-btn);
   }

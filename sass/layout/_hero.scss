@@ -1,17 +1,20 @@
-.hero-container {
-    max-width: 1600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
   
   .hero-container {
     background-color: var(--main-background-color);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../imagies/hero-bg.jpg);
+      url(../imagies/hero/hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../imagies/hero2x.jpg);
   }
+}
   
   .hero-title {
     width: 696px;
