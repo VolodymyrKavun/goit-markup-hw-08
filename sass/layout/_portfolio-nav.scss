@@ -15,8 +15,9 @@
 .portfolio__list {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: center;
-    margin-bottom: 25px;
+    margin-top: -15px;
+    margin-left: -8px;
+    margin-bottom: 40px;
     @media screen and (min-width: 768px) {
       justify-content: center;
       margin-bottom: 30px;
@@ -25,17 +26,20 @@
       margin-bottom: 50px;
     }
   }
-  
 
-  
   .portfolio__item{
-    &:not(:last-child) {
-      @media screen and (max-width: 767px) {
-        margin-bottom: 15px;
-      }
-      margin-right: 8px;
+    margin-top: 15px;
+    margin-left: 8px;
     }
-  }
+
+  // .portfolio__item{
+  //   &:nth-child(-n + 3) {
+  //     @media screen and (max-width: 767px) {
+  //       margin-bottom: 15px;
+  //     }
+  //     margin-right: 8px;
+  //   }
+  // }
   
   .portfolio__btn {
     font-weight: 500;
