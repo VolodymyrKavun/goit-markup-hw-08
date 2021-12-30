@@ -185,38 +185,42 @@
         </section>
     <!-- Особености -->
         <!-- Чем мы занимаемся -->
-        <section class="gallery">
-            <div class="container">
-            <h2 class="gallery-title">
+        <section class="occupation">
+            <div class="container occupation-container">
+            <h2 class="occupation__title">
                 Чем мы занимаемся
             </h2>
-                <ul class="list gallery-list">
-                    <li class="gallery-item">
+                <ul class="list occupation__list">
+                    <li class="occupation__item">
                         <img 
-                            src="./imagies/img.work1.jpg" 
+                        srcset="./imagies/occupation/occ-1-desktop.webp 1x, ./imagies/occupation/occ-1-desktop@2x.webp 2x
+                        "
+                            src="./imagies/occupation/occ-1-desktop@2x.webp" 
                             alt="написание кода" 
                             width="370" 
                             height="294"
                         />
-                            <p class="gallery-text">Десктопные приложения</p>
+                            <p class="occupation__text">Десктопные приложения</p>
                     </li>
-                    <li class="gallery-item">
+                    <li class="occupation__item">
                         <img
-                            src="./imagies/img.work2.jpg" 
+                        srcset="./imagies/occupation/occ-2-desktop.webp 1x, ./imagies/occupation/occ-2-desktop@2x.webp 2x"
+                            src="./imagies/occupation/occ-2-desktop@2x.webp" 
                             alt="программа для телефона" 
                             width="370" 
                             height="294"
                         />
-                        <p class="gallery-text">Мобильные приложения</p>
+                        <p class="occupation__text">Мобильные приложения</p>
                     </li>
-                    <li class="gallery-item">
+                    <li class="occupation__item">
                         <img 
-                            src="./imagies/img.work3.jpg" 
+                        srcset="./imagies/occupation/occ-3-desktop.webp 1x, ./imagies/occupation/occ-3-desktop@2x.webp 2x"
+                            src="./imagies/occupation/occ-3-desktop@2x.webp" 
                             alt="программа для планшета" 
                             width="370" 
                             height="294"
                         />
-                        <p class="gallery-text">Дизайнерские решения</p>
+                        <p class="occupation__text">Дизайнерские решения</p>
                     </li>
                 </ul>
                 </div>
@@ -228,15 +232,33 @@
             <h2 class="masters__title">Наша команда</h2>
 <ul class="masters__list list">
     <li class="masters__item">
-        <img src="./imagies/img.command1.jpg" alt="специалист Игорь" width="270" height="260"/>
+        <picture>
+            <source
+            srcset="./imagies/team/team-1-desktop.webp 1x, 
+            ./imagies/team/team-1-desktop@2x.webp 2x"
+            media="(min-width: 1200px)"
+            >
+            <source
+            srcset="./imagies/team/team-1-tablet.webp 1x, 
+            ./imagies/team/team-1-tablet@2x.webp 2x"
+            media="(min-width: 768px)"
+            >
+            <source
+            srcset="./imagies/team/team-1.webp 1x, 
+            ./imagies/team/team-1@2x.webp 2x"
+            media="(min-width: 320px)"
+            >
+            <img src="./imagies/team/team-1@2x.webp" alt="специалист Игорь"
+            />
+            </picture>
         <div class="masters__wrap">
         <h3 class="masters__lead">Игорь Демьяненко</h3>
         <p class="masters__specialty" lang="en">Product Designer</p>
-    <ul class="masters-social-list list">
-        <li class="masters-social-item">
-            <a href="" class="masters-social-link">
+    <ul class="masters-social__list list">
+        <li class="masters-social__item">
+            <a href="" class="masters-social__link">
                 <svg 
-                class="masters-social-icon" 
+                class="masters-social__icon" 
                 height="20" 
                 width="20">
                     <use 
@@ -244,23 +266,23 @@
                     </use>
                 </svg>
             </a>
-        </li><li class="masters-social-item">
-            <a href="" class="masters-social-link">
-                <svg class="masters-social-icon" height="20" width="20">
+        </li><li class="masters-social__item">
+            <a href="" class="masters-social__link">
+                <svg class="masters-social__icon" height="20" width="20">
                     <use href="./imagies/icons.svg#icon-twitter">
                     </use>
                 </svg>
             </a>
-        </li><li class="masters-social-item">
-            <a href="" class="masters-social-link">
-                <svg class="masters-social-icon" height="20" width="20">
+        </li><li class="masters-social__item">
+            <a href="" class="masters-social__link">
+                <svg class="masters-social__icon" height="20" width="20">
                     <use href="./imagies/icons.svg#icon-facebook">
                     </use>
                 </svg>
             </a>
-        </li><li class="masters-social-item">
-            <a href="" class="masters-social-link">
-                <svg class="masters-social-icon" height="20" width="20">
+        </li><li class="masters-social__item">
+            <a href="" class="masters-social__link">
+                <svg class="masters-social__icon" height="20" width="20">
                     <use href="./imagies/icons.svg#icon-linkedin">
                     </use>
                 </svg>
@@ -270,38 +292,56 @@
     </div>
     </li>
     <li class="masters__item">
-        <img src="./imagies/img.command2.jpg" alt="специалист Ольга" width="270" height="260"/>
+        <picture>
+        <source
+        srcset="./imagies/team/team-2-desktop.webp 1x, 
+        ./imagies/team/team-2-desktop@2x.webp 2x"
+        media="(min-width: 1200px)"
+        >
+        <source
+        srcset="./imagies/team/team-2-tablet.webp 1x, 
+        ./imagies/team/team-2-tablet@2x.webp 2x"
+        media="(min-width: 768px)"
+        >
+        <source
+        srcset="./imagies/team/team-2.webp 1x, 
+        ./imagies/team/team-2@2x.webp 2x"
+        media="(min-width: 320px)"
+        >
+        <img src="./imagies/team/team-2@2x.webp" alt="специалист Ольга"
+        />
+        </picture>
         <div class="masters__wrap">
         <h3 class="masters__lead">Ольга Репина</h3>
         <p class="masters__specialty" lang="en">Frontend Developer</p>
-    <ul class="masters-social-list list">
-        <li class="masters-social-item">
-            <a href="" class="masters-social-link">
-                <svg class="masters-social-icon" height="20" width="20">
+    <ul class="masters-social__list list">
+        <li class="masters-social__item">
+            <a href="" class="masters-social__link">
+                <svg class="masters-social__icon" height="20" width="20">
                     <use href="./imagies/icons.svg#icon-instagram">
                     </use>
                 </svg>
             </a>
         </li>
-        <li class="masters-social-item">
-            <a href="" class="masters-social-link">
-                <svg class="masters-social-icon" height="20" width="20">
+        <li class="masters-social__item">
+            <a href="" class="masters-social__link">
+                <svg class="masters-social__icon" height="20" width="20">
                     <use href="./imagies/icons.svg#icon-twitter">
                     </use>
                 </svg>
             </a>
         </li>
-        <li class="masters-social-item">
-            <a href="" class="masters-social-link">
-                <svg class="masters-social-icon" height="20" width="20">
+        <li class="masters-social__item">
+            <a href="" class="masters-social__link">
+                <svg class="masters-social__icon" height="20" width="20">
                     <use href="./imagies/icons.svg#icon-facebook">
                     </use>
                 </svg>
             </a>
         </li>
-        <li class="masters-social-item">
-            <a href="" class="masters-social-link">
-                <svg class="masters-social-icon" height="20" width="20">
+        <li class="masters-social__item">
+            <a href="" class="masters-social__link">
+                <svg class="masters-social__icon" height="20" width="20">
                     <use href="./imagies/icons.svg#icon-linkedin">
                     </use>
                 </svg>
@@ -311,38 +351,56 @@
     </div>
     </li>
     <li class="masters__item">
-        <img src="./imagies/img.command3.jpg" alt="специалист Николай" width="270" height="260"/>
+        <picture>
+            <source
+            srcset="./imagies/team/team-3-desktop.webp 1x, 
+            ./imagies/team/team-3-desktop@2x.webp 2x"
+            media="(min-width: 1200px)"
+            >
+            <source
+            srcset="./imagies/team/team-3-tablet.webp 1x, 
+            ./imagies/team/team-3-tablet@2x.webp 2x"
+            media="(min-width: 768px)"
+            >
+            <source
+            srcset="./imagies/team/team-3.webp 1x, 
+            ./imagies/team/team-3@2x.webp 2x"
+            media="(min-width: 320px)"
+            >
+            <img src="./imagies/team/team-3@2x.webp" alt="специалист Николай"
+            />
+            </picture>
         <div class="masters__wrap">
         <h3 class="masters__lead">Николай Тарасов</h3>
         <p class="masters__specialty" lang="en">Marketing</p>
-    <ul class="masters-social-list list">
-        <li class="masters-social-item">
-            <a href="" class="masters-social-link">
-                <svg class="masters-social-icon" height="20" width="20">
+    <ul class="masters-social__list list">
+        <li class="masters-social__item">
+            <a href="" class="masters-social__link">
+                <svg class="masters-social__icon" height="20" width="20">
                     <use href="./imagies/icons.svg#icon-instagram">
                     </use>
                 </svg>
             </a>
         </li>
-        <li class="masters-social-item">
-            <a href="" class="masters-social-link">
-                <svg class="masters-social-icon" height="20" width="20">
+        <li class="masters-social__item">
+            <a href="" class="masters-social__link">
+                <svg class="masters-social__icon" height="20" width="20">
                     <use href="./imagies/icons.svg#icon-twitter">
                     </use>
                 </svg>
             </a>
         </li>
-        <li class="masters-social-item">
-            <a href="" class="masters-social-link">
-                <svg class="masters-social-icon" height="20" width="20">
+        <li class="masters-social__item">
+            <a href="" class="masters-social__link">
+                <svg class="masters-social__icon" height="20" width="20">
                     <use href="./imagies/icons.svg#icon-facebook">
                     </use>
                 </svg>
             </a>
         </li>
-        <li class="masters-social-item">
-            <a href="" class="masters-social-link">
-                <svg class="masters-social-icon" height="20" width="20">
+        <li class="masters-social__item">
+            <a href="" class="masters-social__link">
+                <svg class="masters-social__icon" height="20" width="20">
                     <use href="./imagies/icons.svg#icon-linkedin">
                     </use>
                 </svg>
@@ -352,38 +410,56 @@
     </div>
     </li>
     <li class="masters__item">
-        <img src="./imagies/img.command4.jpg" alt="специалист Михаил" width="270" height="260"/>
+        <picture>
+            <source
+            srcset="./imagies/team/team-4-desktop.webp 1x, 
+            ./imagies/team/team-4-desktop@2x.webp 2x"
+            media="(min-width: 1200px)"
+            >
+            <source
+            srcset="./imagies/team/team-4-tablet.webp 1x, 
+            ./imagies/team/team-4-tablet@2x.webp 2x"
+            media="(min-width: 768px)"
+            >
+            <source
+            srcset="./imagies/team/team-4.webp 1x, 
+            ./imagies/team/team-4@2x.webp 2x"
+            media="(min-width: 320px)"
+            >
+            <img src="./imagies/team/team-4@2x.webp" alt="специалист Михаил"
+            />
+            </picture>
         <div class="masters__wrap">
         <h3 class="masters__lead">Михаил Ермаков</h3>
         <p class="masters__specialty" lang="en">UI Designer</p>
-    <ul class="masters-social-list list">
-        <li class="masters-social-item">
-            <a href="" class="masters-social-link">
-                <svg class="masters-social-icon" height="20" width="20">
+    <ul class="masters-social__list list">
+        <li class="masters-social__item">
+            <a href="" class="masters-social__link">
+                <svg class="masters-social__icon" height="20" width="20">
                     <use href="./imagies/icons.svg#icon-instagram">
                     </use>
                 </svg>
             </a>
         </li>
-        <li class="masters-social-item">
-            <a href="" class="masters-social-link">
-                <svg class="masters-social-icon" height="20" width="20">
+        <li class="masters-social__item">
+            <a href="" class="masters-social__link">
+                <svg class="masters-social__icon" height="20" width="20">
                     <use href="./imagies/icons.svg#icon-twitter">
                     </use>
                 </svg>
             </a>
         </li>
-        <li class="masters-social-item">
-            <a href="" class="masters-social-link">
-                <svg class="masters-social-icon" height="20" width="20">
+        <li class="masters-social__item">
+            <a href="" class="masters-social__link">
+                <svg class="masters-social__icon" height="20" width="20">
                     <use href="./imagies/icons.svg#icon-facebook">
                     </use>
                 </svg>
             </a>
         </li>
-        <li class="masters-social-item">
-            <a href="" class="masters-social-link">
-                <svg class="masters-social-icon" height="20" width="20">
+        <li class="masters-social__item">
+            <a href="" class="masters-social__link">
+                <svg class="masters-social__icon" height="20" width="20">
                     <use href="./imagies/icons.svg#icon-linkedin">
                     </use>
                 </svg>
@@ -397,55 +473,56 @@
         </section>
 <!-- Команда -->
         <!-- Постоянные клиенты -->
-        <!-- <section class="clients">
-            <div class="container">
-            <h2 class="clients-title">Постоянные клиенты</h2>
-            <ul class="clients-list list">
-                <li class="clients-item">
-                    <a class="clients-link" href="">
-                        <svg class="clients-icon" width="106" height="60">
+        <section class="clients">
+            <div class="container clients__container">
+            <h2 class="clients__title">Постоянные клиенты</h2>
+            <ul class="clients__list list">
+                <li class="clients__item">
+                    <a class="clients__link" href="">
+                        <svg class="clients__icon" width="106" height="60">
                             <use href="./imagies/icons.svg#icon-yaco"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="clients-item">
-                    <a class="clients-link" href="">
-                        <svg class="clients-icon" width="106" height="60">
+                <li class="clients__item">
+                    <a class="clients__link" href="">
+                        <svg class="clients__icon" width="106" height="60">
                             <use href="./imagies/icons.svg#icon-group2"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="clients-item">
-                    <a class="clients-link" href="">
-                        <svg class="clients-icon" width="106" height="60">
+                <li class="clients__item">
+                    <a class="clients__link" href="">
+                        <svg class="clients__icon" width="106" height="60">
                             <use href="./imagies/icons.svg#icon-company"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="clients-item">
-                    <a class="clients-link" href="">
-                        <svg class="clients-icon" width="106" height="60">
+                <li class="clients__item">
+                    <a class="clients__link" href="">
+                        <svg class="clients__icon" width="106" height="60">
                             <use href="./imagies/icons.svg#icon-foster"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="clients-item">
-                    <a class="clients-link" href="">
-                        <svg class="clients-icon" width="106" height="60">
+                <li class="clients__item">
+                    <a class="clients__link" href="">
+                        <svg class="clients__icon" width="106" height="60">
                             <use href="./imagies/icons.svg#icon-brand"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="clients-item">
-                    <a class="clients-link" href="">
-                        <svg class="clients-icon" width="106" height="60">
+                <li class="clients__item">
+                    <a class="clients__link" href="">
+                        <svg class="clients__icon" width="106" height="60">
                             <use href="./imagies/icons.svg#icon-tagline"></use>
                         </svg>
                     </a>
                 </li>
             </ul>
             </div>
-        </section> -->
+        </section>
+<!-- Постоянные клиенты -->
     </main>
     <!-- Подвал сайта -->
     <footer class="footer">
